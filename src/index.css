@@ -4,3 +4,19 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+*:focus,
+*::after {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.shopping-icon {
+  margin-left: 0.5rem;
+}
+
+.search-icon {
+  position: absolute;
+  right: 3%;
+  top: 25%;
+}
