@@ -17,7 +17,8 @@ export const Navbar: FC = () => {
 };
 
 const NavbarWrapper = styled.nav`
-  background-color: #000;
+  background-color: whitesmoke;
+  padding: 1rem;
 `;
 const MainContentWrapper = styled.section``;
 
