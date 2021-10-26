@@ -18,6 +18,7 @@ const HeaderWrapper = styled.header`
   padding: 1rem;
   text-align: center;
 `;
+
 const HeaderTitle = styled.p`
   color: #fff;
   font-size: 0.9rem;

@@ -36,7 +36,7 @@ export const Navbar: FC = () => {
 };
 
 const NavbarWrapper = styled.nav`
-  background-color: whitesmoke;
+  background-color: #fff;
   padding: 0.75rem;
 `;
 
