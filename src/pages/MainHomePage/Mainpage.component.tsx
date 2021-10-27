@@ -3,19 +3,19 @@ import styled from "styled-components";
 import shoppingImage from "../../assets/Images/shopping-img.png";
 
 export const Mainpage: FC = () => {
-  return (
-    <MainHomepageWrapper>
-      <MiddleContentWrapper>
-        <ButtonWrapper>
-          <SellerButton>BE A SELLER</SellerButton>
-          <ShoppingButton>SHOP NOW</ShoppingButton>
-        </ButtonWrapper>
-        <ImageWrapper>
-          <ShoppingImage src={shoppingImage} alt="shopping-img"></ShoppingImage>
-        </ImageWrapper>
-      </MiddleContentWrapper>
-    </MainHomepageWrapper>
-  );
+    return (
+        <MainHomepageWrapper>
+            <MiddleContentWrapper>
+                <ButtonWrapper>
+                    <SellerButton>BE A SELLER</SellerButton>
+                    <ShoppingButton>SHOP NOW</ShoppingButton>
+                </ButtonWrapper>
+                <ImageWrapper>
+                    <ShoppingImage src={shoppingImage} alt="shopping-img"></ShoppingImage>
+                </ImageWrapper>
+            </MiddleContentWrapper>
+        </MainHomepageWrapper>
+    );
 };
 
 const MainHomepageWrapper = styled.article`
