@@ -17,7 +17,7 @@ const HeaderWrapper = styled.header`
   height: 1.3rem;
   padding: 1rem;
   text-align: center;
-  @media (min-width: 576px){
+  @media (min-width: 576px) {
     height: 0.5rem;
   }
 `;

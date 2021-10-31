@@ -31,7 +31,7 @@ const MiddleContentWrapper = styled.section`
 
 const ImageWrapper = styled.figure`
   object-fit: contain;
-  margin-left: -1rem
+  margin-left: -1rem;
 `;
 
 const ShoppingImage = styled.img`
@@ -45,6 +45,9 @@ const ButtonWrapper = styled.section`
   display: flex;
   flex-direction: column;
   z-index: 99999;
+  @media (min-width: 576px) {
+    display: none;
+  }
 `;
 
 const ShoppingButton = styled.button`
@@ -80,12 +83,11 @@ const SellerButton = styled.button`
   }
 `;
 
-
 const ShopNowButton = styled.button`
 position: absolute;
 left: 20%;
 top:70%;
-tranform: translate(-30%,-30%)
+tranform: translate(-50%,-50%)
 padding: 1rem;
 background-color:	#097969;
 width: 10rem;
@@ -93,4 +95,4 @@ color: white;
 font-weight: bold;
 border:none;
 height: 2.25rem;
-`
+`;

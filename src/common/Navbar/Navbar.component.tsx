@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { BellIcon, SearchIcon, ShoppingIcon } from "../../assets/Icons/Icons";
 
 export const Navbar: FC = () => {
-  const handleClick = () => { };
+  const handleClick = () => {};
 
   return (
     <NavbarWrapper>
@@ -13,6 +13,7 @@ export const Navbar: FC = () => {
             <option value="English">EN</option>
             <option value="Nepali">NEP</option>
           </LanguageWrapper>
+          <LogoTitle>ECOMMERCE-FRONTEND</LogoTitle>
         </SearchWrapper>
         <SearchBoxWrapper>
           <SearchInput
@@ -33,21 +34,34 @@ export const Navbar: FC = () => {
 
 const NavbarWrapper = styled.nav`
   background-color: #fff;
-  padding: 0.75rem;
 `;
 
 const MainContentWrapper = styled.section`
   display: flex;
   flex-direction: row;
+  margin: 0.5rem 3%;
   justify-content: space-between;
+  @media (min-width: 576px) {
+    margin: 0rem 3%;
+  }
 `;
 
-
+const LogoTitle = styled.h1`
+  font-size: 0.9rem;
+  display: none;
+  @media (min-width: 576px) {
+    display: block;
+    margin-left: 0.5rem;
+  }
+`;
 
 const SearchWrapper = styled.section`
   display: flex;
   flex-directon: row;
   align-items: center;
+  @media (min-width: 576px) {
+    width: 15rem;
+  }
 `;
 
 const SearchBoxWrapper = styled.section`
@@ -63,12 +77,15 @@ const LanguageWrapper = styled.select`
   margin: 0rem 2%;
 `;
 
-
 const SearchInput = styled.input`
   height: 1.55rem;
   margin-bottom: 0.1rem;
   margin: 0rem 1%;
-  position:relative;
+  position: relative;
+  @media (min-width: 576px) {
+    width: 15rem;
+    padding: 0.1rem;
+  }
 `;
 
 const CartWrapper = styled.section`
