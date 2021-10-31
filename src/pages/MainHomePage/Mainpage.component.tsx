@@ -3,19 +3,20 @@ import styled from "styled-components";
 import shoppingImage from "../../assets/Images/shopping-img.png";
 
 export const Mainpage: FC = () => {
-    return (
-        <MainHomepageWrapper>
-            <MiddleContentWrapper>
-                <ButtonWrapper>
-                    <SellerButton>BE A SELLER</SellerButton>
-                    <ShoppingButton>SHOP NOW</ShoppingButton>
-                </ButtonWrapper>
-                <ImageWrapper>
-                    <ShoppingImage src={shoppingImage} alt="shopping-img"></ShoppingImage>
-                </ImageWrapper>
-            </MiddleContentWrapper>
-        </MainHomepageWrapper>
-    );
+  return (
+    <MainHomepageWrapper>
+      <MiddleContentWrapper>
+        <ButtonWrapper>
+          <SellerButton>BE A SELLER</SellerButton>
+          <ShoppingButton>LET'S MEET</ShoppingButton>
+        </ButtonWrapper>
+        <ImageWrapper>
+          <ShoppingImage src={shoppingImage} alt="shopping-img"></ShoppingImage>
+          <ShopNowButton>SHOP NOW</ShopNowButton>
+        </ImageWrapper>
+      </MiddleContentWrapper>
+    </MainHomepageWrapper>
+  );
 };
 
 const MainHomepageWrapper = styled.article`
@@ -30,8 +31,7 @@ const MiddleContentWrapper = styled.section`
 
 const ImageWrapper = styled.figure`
   object-fit: contain;
-  position: relative;
-  right: 10%;
+  margin-left: -1rem
 `;
 
 const ShoppingImage = styled.img`
@@ -41,7 +41,7 @@ const ShoppingImage = styled.img`
 const ButtonWrapper = styled.section`
   position: absolute;
   right: -1%;
-  top: 35%;
+  top: 30%;
   display: flex;
   flex-direction: column;
   z-index: 99999;
@@ -75,8 +75,22 @@ const SellerButton = styled.button`
   font-size: 0.75rem;
   margin-bottom: 0.5rem;
   transition: 0.5s;
-
   &:hover {
     width: 8rem;
   }
 `;
+
+
+const ShopNowButton = styled.button`
+position: absolute;
+left: 20%;
+top:70%;
+tranform: translate(-30%,-30%)
+padding: 1rem;
+background-color:	#097969;
+width: 10rem;
+color: white;
+font-weight: bold;
+border:none;
+height: 2.25rem;
+`

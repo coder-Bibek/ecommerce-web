@@ -1,10 +1,9 @@
 import React, { FC } from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { BellIcon, SearchIcon, ShoppingIcon } from "../../assets/Icons/Icons";
 
 export const Navbar: FC = () => {
-  const handleClick = () => {};
+  const handleClick = () => { };
 
   return (
     <NavbarWrapper>
@@ -14,9 +13,6 @@ export const Navbar: FC = () => {
             <option value="English">EN</option>
             <option value="Nepali">NEP</option>
           </LanguageWrapper>
-          <LogoWrapper>
-            <Link to="/">EF</Link>
-          </LogoWrapper>
         </SearchWrapper>
         <SearchBoxWrapper>
           <SearchInput
@@ -46,6 +42,8 @@ const MainContentWrapper = styled.section`
   justify-content: space-between;
 `;
 
+
+
 const SearchWrapper = styled.section`
   display: flex;
   flex-directon: row;
@@ -62,17 +60,15 @@ const SearchBoxWrapper = styled.section`
 const LanguageWrapper = styled.select`
   font-size: 0.7rem;
   height: 1.5rem;
-  margin: 0rem 1%;
+  margin: 0rem 2%;
 `;
 
-const LogoWrapper = styled.section`
-  display: none;
-`;
 
 const SearchInput = styled.input`
-  height: 1.15rem;
+  height: 1.55rem;
   margin-bottom: 0.1rem;
-  margin: 0rem 0.3%;
+  margin: 0rem 1%;
+  position:relative;
 `;
 
 const CartWrapper = styled.section`
